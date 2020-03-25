@@ -26,10 +26,10 @@ if (defined('ENVIRONMENT'))
 
 //configuration base de donnee
 $database = array(
-    "serveur"=>"localhost",
-    "nom_base"=>"los_framework",
-    "utilisateur"=>"root",
-    "motdepasse"=>""
+    "serveur"=>"db_host",
+    "nom_base"=>"db_name",
+    "utilisateur"=>"db_user",
+    "motdepasse"=>"db_password"
 );
 
 //configuration email
@@ -48,7 +48,7 @@ $configurationEmail = array(
 //fin configuration email
 
 $configuration = array(
-    "defaultRoot"=>"Routing",
+    "defaultRoot"=>"RoutingInstall",
     "url" => $_GET['url'],
     "database" => $database,
     "configurationEmail"=>$configurationEmail,
